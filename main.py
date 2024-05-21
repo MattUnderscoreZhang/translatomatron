@@ -26,7 +26,7 @@ if __name__ == "__main__":
             return
 
         # translate
-        prompt = f"If the following text is Chinese, translate it to English. If it is English, translate it to Chinese: {message.content}"
+        prompt = f"If the untranslated text is majority Chinese, translate it to English. If it is majority English, translate it to Chinese. Only reply with the translated text. Untranslated text: {message.content}"
         translation = interface.say(prompt)
 
         # reply to original message
