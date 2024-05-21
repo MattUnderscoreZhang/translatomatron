@@ -1,0 +1,21 @@
+[project]
+name = "translatomatron"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Matt Zhang", email = "set.stun@gmail.com"},
+]
+dependencies = [
+    "pynacl>=1.5.0",
+    "python-dotenv>=1.0.1",
+    "fastapi>=0.111.0",
+    "discord>=2.3.2",
+    "py-gpt-interface>=0.8.2",
+]
+requires-python = "==3.11.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
