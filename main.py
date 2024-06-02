@@ -25,6 +25,10 @@ if __name__ == "__main__":
         if message.author == client.user:
             return
 
+        # ignore empty messages
+        if message.content == "":
+            return
+
         # translate
         prompt = f"If the untranslated text is majority Chinese, translate it to English. If it is majority English, translate it to Chinese. Only reply with the translated text. Untranslated text: {message.content}"
         translation = interface.say(prompt)
